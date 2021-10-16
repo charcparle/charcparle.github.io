@@ -1,0 +1,211 @@
+<html>
+  <head>
+    <style>
+      body{
+        font-family: monospace;
+      }
+      #navbar{
+        font-size: 2em;
+        color: #ddd;
+        background-color: #000;
+        position: fixed;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        
+      }
+
+      .nav-div{
+        padding: 0px 10px 0px 10px;
+      }
+      a{
+        color: inherit;
+        text-decoration: inherit;
+      }
+      #container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 'welcome' 'projects''profile';
+        width: 100%;
+      }
+      #welcome-section{
+        grid-area: welcome;
+        background-color: #ddd;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      #projects{
+        grid-area: projects;
+        background-color: #aaa;
+        display: flex;
+        flex-direction: row;
+        justify-content:  space-around;
+        align-items: center;
+        height: 100vh;
+        padding: 10px 10px 10px 10px;
+      }
+      .project-tile{
+        font-size: 3em;
+        background-color: #ccc;
+        height: 90vh;
+        padding: 10px 10px 10px 10px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;  
+      }
+      #profile{
+        grid-area: profile;
+        background-color: #777;
+        display: flex;
+        flex-direction: row;
+        justify-content:  space-around;
+        align-items: center;
+        height: 100vh;
+        padding: 10px 10px 10px 10px;
+      }
+      .profile-tile{
+        font-size: 5em;
+        background-color: #888;
+        height: 90vh;
+        padding: 10px 10px 10px 10px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+      }
+      @media (max-width:800px) {
+        #projects{
+        grid-area: projects;
+        display: flex;
+        flex-direction: column;
+        justify-content:  space-around;
+        align-content: space-around;
+        align-items: center;
+        height: auto;
+        width: 100vw;
+        padding: 10px 10px 10px 10px;
+        }
+        #profile{
+        grid-area: profile;
+        background-color: #777;
+        display: flex;
+        flex-direction: column;
+        justify-content:  space-around;
+        align-items: center;
+        height: auto;
+        width: 100vw;
+        padding: 10px 10px 10px 10px;
+        }
+      }
+        align-items: center;  
+      }
+      @media (max-width:800px) {
+        #projects{
+        grid-area: projects;
+        display: flex;
+        flex-direction: column;
+        justify-content:  space-around;
+        align-content: space-around;
+        align-items: center;
+        height: auto;
+        width: 100vw;
+        padding: 10px 10px 10px 10px;
+        }
+        #profile{
+        grid-area: profile;
+        background-color: #777;
+        display: flex;
+        flex-direction: column;
+        justify-content:  space-around;
+        align-items: center;
+        height: auto;
+        width: 100vw;
+        padding: 10px 10px 10px 10px;
+        }
+      }
+        align-items: center;  
+      }
+      @media (max-width:800px) {
+        #projects{
+        grid-area: projects;
+        display: flex;
+        flex-direction: column;
+        justify-content:  space-around;
+        align-content: space-around;
+        align-items: center;
+        height: auto;
+        width: 100vw;
+        padding: 10px 10px 10px 10px;
+        }
+        #profile{
+        grid-area: profile;
+        background-color: #777;
+        display: flex;
+        flex-direction: column;
+        justify-content:  space-around;
+        align-items: center;
+        height: auto;
+        width: 100vw;
+        padding: 10px 10px 10px 10px;
+        }
+      }
+        align-items: center;  
+      }
+      @media (max-width:800px) {
+        #projects{
+        grid-area: projects;
+        display: flex;
+        flex-direction: column;
+        justify-content:  space-around;
+        align-content: space-around;
+        align-items: center;
+        height: auto;
+        width: 100vw;
+        padding: 10px 10px 10px 10px;
+        }
+        #profile{
+        grid-area: profile;
+        background-color: #777;
+        display: flex;
+        flex-direction: column;
+        justify-content:  space-around;
+        align-items: center;
+        height: auto;
+        width: 100vw;
+        padding: 10px 10px 10px 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+    <nav id="navbar">
+      <div class="nav-div"><a href="#welcome-sectoion">Welcome</a></div>
+      <div class="nav-div"><a href="#projects">Projects</a></div>
+      <div class="nav-div"><a href="#profile">Profile</a></div>
+    </nav>
+    <section id="welcome-section">
+      <h1> Hi, this is Charles. </h1>
+    </section>
+    <section id="projects">
+      <div class="project-tile" id="project 1"><h3>test1</h3></div>
+      <div class="project-tile" id="project 2"><a href="https://codepen.io/charles-cheng/pen/zYqBrOE"><h3>test2 </h3></a></div>
+      <div class="project-tile" id="project 2"><h3>test3</h3></div>
+    </section>
+    <section id="profile">
+      <div class="profile-tile">GitHub</div>
+      <div class="profile-tile">Linked-in</div>
+      <div class="profile-tile"><a href="" target="_blank" id="profile-link">FCC profile</div>
+      
+    </section>
+    </div>
+  </body>
+</html>
